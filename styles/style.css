@@ -30,6 +30,7 @@
   font-size: 102px;
   font-weight: 600;
 
+  margin: 0;
   z-index: 3;
 }
 
@@ -39,6 +40,7 @@
   font-size: 18px;
   font-weight: normal;
 
+  margin: 0;
   position: absolute;
   bottom: 30px;
   z-index: 2;
@@ -46,6 +48,7 @@
 
 .header__link {
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -96,12 +99,12 @@
   margin: 0;
 }
 
-.two_columns__main-text{
+.two-columns__main-text{
   width: 80%;
   min-width: 784px;
 }
 
-.two_columns__paragraph {
+.two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -110,7 +113,7 @@
   margin-bottom: 30px;
 }
 
-.two_columns__paragraph:last-of-type {
+.two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
 
@@ -158,6 +161,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   margin: auto;
 }
 
@@ -183,6 +189,10 @@
 
   margin: 0;
   margin-bottom: 20px;
+}
+
+.table__text:last-of-type {
+  margin-bottom: 0;
 }
 
 .feynman {
@@ -226,6 +236,7 @@
   font-size: 36px;
   font-weight: normal;
   color: #2f80ed;
+  text-decoration: none;
 
   position: absolute;
   top: 50%;
@@ -254,24 +265,31 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
 
   position: absolute;
   top: 0;
   right: -210px;
+
+  z-index: 1;
 }
 
 .section-title_theme_dark {
   color: white;
+
+  z-index: 2;
 }
 
 .section-subtitle_theme_dark {
   color: white;
+
+  z-index: 2;
 }
 
 .table_theme_dark {
-  z-index: 1;
+  z-index: 2;
 }
 
 .table__cell_theme_dark {
@@ -301,9 +319,15 @@
 }
 
 .footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 711px;
+}
 
-  position: relative;
+.logo_place_footer {
+  width: 228px;
+  height: 32px;
 }
 
 .footer__author {
@@ -313,10 +337,6 @@
   font-weight: normal;
 
   margin: 18px 0;
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .footer__column_content_social {
@@ -337,6 +357,7 @@
   padding: 0;
   margin: 0;
   margin: 20px 0 16px;
+  list-style-type: none;
 }
 
 .footer__column-link {
@@ -344,20 +365,7 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-
-  list-style-type: none;
-}
-
-.footer__column-link_container {
-  font-size: 0;
-}
-
-.footer__column-link_container:first-of-type {
-  margin-top: 20px;
-}
-
-.footer__column-link_container:last-of-type {
-  margin-bottom: 16px;
+  text-decoration: none;
 }
 
 .footer__text {
@@ -372,6 +380,5 @@
 }
 
 .footer__sosial-icon {
-  vertical-align: sub;
   margin-right: 10px;
 }
