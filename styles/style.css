@@ -1,3 +1,13 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -17,6 +27,8 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 64px;
+
+  overflow: hidden;
 }
 
 .logo_place_header {
@@ -49,6 +61,12 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.header__link:hover {
+  opacity: 70%;
 }
 
 .header__main-illustration {
@@ -70,6 +88,8 @@
   position: absolute;
   top: 64px;
   right: 0;
+
+  animation: rotation 20s infinite linear;
 }
 
 .description {
@@ -121,6 +141,167 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
+}
+
+.techniques {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 100px;
+}
+
+.techniques__container {
+  width: 80%;
+  margin: auto;
+}
+
+.cards {
+  width: 920px;
+  list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  width: 240px;
+  padding-top: 60px;
+  margin-right: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards__item:nth-of-type(3n+3) {
+  margin-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+}
+
+.cards__title {
+  margin: 43px 0 16px;
+
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cards__description {
+  margin: 0;
+
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.video {
+  padding-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__iframes {
+  display: inline;
+  font-size: 0;
+
+  position: relative;
+  top: 50px;
+}
+
+.video__iframe {
+  box-sizing: border-box;
+}
+
+.video__iframe:first-child {
+  margin-right: 20px;
+}
+
+.oakley {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 160px;
+  background-color:  #f2f2f2;
+}
+
+.feynman {
+  background-color:  #f2f2f2;
+
+  min-height: 890px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 100px;
+}
+
+.feynman__title {
+  width: 648px;
+  text-align: center;
+
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+
+  margin: 0;
+  margin-top: 100px;
+
+  z-index: 1;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+
+  margin: 0;
+  margin-top: 70px;
+
+  z-index: 1;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+
+  position: absolute;
+  top: 50%;
+  right: 48px;
+
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.feynman__link:hover {
+  opacity: 70%;
+}
+
+.feynman__img {
+  width: 867px;
+  height: 637px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .digits {
@@ -192,63 +373,6 @@
 
 .table__text:last-of-type {
   margin-bottom: 0;
-}
-
-.feynman {
-  background-color:  #f2f2f2;
-
-  min-height: 890px;
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.feynman__title {
-  width: 648px;
-  text-align: center;
-
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: 600;
-
-  margin: 0;
-  margin-top: 100px;
-
-  z-index: 1;
-}
-
-.feynman__subtitle {
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-
-  margin: 0;
-  margin-top: 70px;
-
-  z-index: 1;
-}
-
-.feynman__link {
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  color: #2f80ed;
-  text-decoration: none;
-
-  position: absolute;
-  top: 50%;
-  right: 48px;
-}
-
-.feynman__img {
-  width: 867px;
-  height: 637px;
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .kaufman {
@@ -365,6 +489,12 @@
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
+
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+.footer__column-link:hover {
+  opacity: 70%;
 }
 
 .footer__text {
