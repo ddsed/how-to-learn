@@ -88,8 +88,10 @@
   position: absolute;
   top: 64px;
   right: 0;
+}
 
-  animation: rotation 20s infinite linear;
+.rotation {
+    animation: rotation 20s infinite linear;
 }
 
 .description {
@@ -375,6 +377,89 @@
   margin-bottom: 0;
 }
 
+.khan {
+  background-color:  #f2f2f2;
+  padding-top: 105px;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+
+  margin: 0;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.khan__quote {
+  width: 790px;
+
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+
+  margin: 0;
+  margin-bottom: 68px;
+}
+
+.khan__book-container {
+  display: flex;
+}
+
+.khan__book-pic {
+width: 608px;
+height: 620px;
+
+object-fit: cover;
+object-position: top;
+
+margin-right: 48px;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.khan__buy-link:hover {
+  opacity: 70%;
+}
+
 .kaufman {
   background-color: #1f1f1f;
 
@@ -389,6 +474,7 @@
 
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
   width: 877px;
   height: 877px;
 
@@ -421,6 +507,35 @@
 
   margin-right: 0;
   margin-top: 80px;
+}
+
+.resources {
+  padding: 100px 0 217px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resources__logo-zone {
+  width: 1100px;
+
+  margin: 0;
+  margin-top: 80px;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+}
+
+.resources__link {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.resources__link:hover {
+  opacity: 70%;
 }
 
 .footer {
