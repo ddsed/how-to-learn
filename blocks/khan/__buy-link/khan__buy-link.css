@@ -3,6 +3,9 @@
   font-size: 30px;
   font-weight: normal;
 
+  color: #2f80ed;
+  text-decoration: none;
+
   opacity: 1;
   transition: opacity 0.5s ease-in;
 }
